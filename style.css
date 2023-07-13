@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chelsea+Market&family=Kanit&family=Rum+Raisin&family=Ubuntu&family=Ysabeau+Infant&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    background-color: rgba(16, 16, 16, 0.89);
+    color: white;
+    display: flex;
+    min-height: 3.5vmax;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: sticky;
+}
+.navi{
+    display: flex;
+    min-width: 30%;
+    justify-content: center;
+}
+.btn{
+    cursor: pointer;
+    height: 3.5vmax;
+    width: 7vmax;
+    font-size: 1.2vmax;
+    padding: 4px 10px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    user-select: none;
+    transition: .5s;
+}
+.btn:hover{
+    color: rgb(16, 16, 16);
+    background-color: white;
+    border-color: rgb(16, 16, 16);
+    border-radius: 10px;
+    transform: translateX(-5px);
+    box-shadow: 0 0 10px black;
+}
+.btn:active{
+    background-color: rgb(192, 192, 192);
+    transform: translateX(0px) scale(0.95);box-shadow: 0 0 10px black;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 30px 20px;
+    min-height: 70vh;
+    background-color: rgba(39, 43, 41, 0.808);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 50px black;
+    top: 10vh;
+}
+.container>h2{
+    text-align: center;
+    font-size: 3vmax;
+    color: white;
+    pointer-events: none;
+    user-select: none;
+}
+.container input{
+    outline: none;
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    font-size: 1.2vmax;
+    padding: 5px 10px;
+    color: white;
+    border-bottom: 2px solid white;
+    background: transparent;
+    transition: .5s;
+}
+.ma{
+    margin: auto;
+    display: block;
+}
+.ma:hover{
+    transform: scale(1.1);
+}
+.ma:active{
+    transform: scale(1);
+}
+.container input:active, input:focus{
+    width: 65%;
+}
+.task{
+    position: relative;
+    width: 60%;
+    height: 7vh;
+    margin: 20px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(141, 140, 140);
+    background: rgb(141, 140, 140);
+    box-shadow: 0 0 15px rgb(70, 69, 69);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;    
+    transition: .5s;
+}
+.delete{
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+}
+.delete:hover{
+    transform: scale(1.2);
+}
+.delete:active{
+    transform: scale(1.1);
+}
+.heading{
+    font-size: 1.5vmax;
+    font-weight: bold;
+    user-select: none;
+    color: white;
+}
+.des{
+    color: white;
+}
